@@ -1,0 +1,175 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tambahkan aturan CSS untuk membuat tampilan kartu pada profile */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #ccc; /* Tambahkan border */
+    border-radius: 10px; /* Tambahkan border-radius untuk membuat sudut terbulat */
+    padding: 20px; /* Tambahkan padding */
+    box-shadow: 0 4px 8px rgba(89, 3, 218, 0.1); /* Tambahkan bayangan untuk efek 3D */
+}
+
+/* Gaya untuk gambar profil */
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 5px solid;
+    animation: pulse 5s infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Gaya untuk efek melayang pada gambar profil */
+.profile-img img:hover {
+    transform: scale(1.1);
+}
+
+/* Animasi untuk efek pulsasi pada gambar profil */
+@keyframes pulse {
+    0% { border-color: green; }
+    10% { border-color: lime; }
+    20% { border-color: lightgreen; }
+    30% { border-color: springgreen; }
+    40% { border-color: mediumseagreen; }
+    50% { border-color: forestgreen; }
+    60% { border-color: darkgreen; }
+    70% { border-color: seagreen; }
+    80% { border-color: olive; }
+    90% { border-color: yellowgreen; }
+    100% { border-color: green; }
+}
+
+/* Gaya untuk informasi profil */
+.profile-info {
+    flex: 1;
+}
+
+/* Gaya untuk judul profil */
+.profile-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000; /* Menetapkan warna teks menjadi hitam */
+}
+
+/* Gaya untuk daftar tautan sosial */
+.social-links {
+    list-style-type: none;
+}
+
+/* Gaya untuk setiap tautan sosial */
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #000; /* Ubah warna teks menjadi hitam */
+    transition: color 0.3s ease; /* Tambahkan transisi untuk perubahan warna */
+}
+
+.social-links li a:hover {
+    color: blue;
+}
+
+/* Gaya untuk tautan GitHub */
+.social-links li.github a {
+    color: #000;
+}
+
+.social-links li.github a:hover {
+    color: blue;
+}
+
+/* Gaya untuk pengalaman */
+.experience {
+    margin-bottom: 30px;
+}
+
+.experience h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk daftar pengalaman */
+.experience-list li {
+    background-color: #f9f9f9; /* Warna latar belakang untuk setiap item */
+    border: 1px solid #ddd; /* Tambahkan garis tepi */
+    padding: 10px; /* Tambahkan padding untuk ruang di sekitar konten */
+    margin-bottom: 10px; /* Tambahkan margin bawah antara setiap item */
+}
+
+/* Gaya untuk judul pengalaman */
+.experience-list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000; /* Menetapkan warna teks menjadi hitam */
+}
+
+.experience-list h3 a {
+    color: #000; /* Menetapkan warna teks link menjadi hitam */
+}
+
+.experience-list h3 a:hover {
+    color: blue;
+}
+
+/* Gaya untuk footer */
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Untuk layar kecil (mobile) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-img img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .social-links li {
+        margin-bottom: 5px;
+    }
+
+    .experience h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .experience-list h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
